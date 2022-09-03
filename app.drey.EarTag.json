@@ -34,8 +34,8 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/knuxify/eartag.git",
-                    "tag": "0.1.1",
-                    "commit": "2e9b14426b26b701e943d88818107d9d0412ae75"
+                    "tag": "0.2.0",
+                    "commit": "1d2bbb7c86c0b3864406aabed719616d9f245b3a"
                 }
             ]
         },

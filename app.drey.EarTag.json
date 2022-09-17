@@ -27,19 +27,6 @@
     ],
     "modules" : [
         {
-            "name" : "eartag",
-            "builddir" : true,
-            "buildsystem" : "meson",
-            "sources" : [
-                {
-                    "type" : "git",
-                    "url" : "https://github.com/knuxify/eartag.git",
-                    "tag": "0.2.1",
-                    "commit": "af529a703c3b94834dba7fb0444715375b2ef789"
-                }
-            ]
-        },
-        {
             "name": "taglib",
             "builddir": true,
             "buildsystem": "cmake-ninja",
@@ -52,6 +39,19 @@
                 }
             ]
         },
-        "python-modules.json"
+        "python-modules.json",
+        {
+            "name" : "eartag",
+            "builddir" : true,
+            "buildsystem" : "meson",
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://github.com/knuxify/eartag.git",
+                    "tag": "0.2.1",
+                    "commit": "af529a703c3b94834dba7fb0444715375b2ef789"
+                }
+            ]
+        }
     ]
 }

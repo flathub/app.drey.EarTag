@@ -26,19 +26,6 @@
         "*.a"
     ],
     "modules" : [
-        {
-            "name": "taglib",
-            "builddir": true,
-            "buildsystem": "cmake-ninja",
-            "config-opts": ["-DWITH_ASF=ON", "-DWITH_MP4=ON", "-DBUILD_SHARED_LIBS=ON"],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://taglib.github.io/releases/taglib-1.12.tar.gz",
-                    "sha512": "7e369faa5e3c6c6401052b7a19e35b0cf8c1e5ed9597053ac731a7718791d5d4803d1b18a93e903ec8c3fc6cb92e34d9616daa2ae4d326965d4c4d5624dcdaba"
-                }
-            ]
-        },
         "python-modules.json",
         {
             "name" : "eartag",
@@ -48,8 +35,8 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/knuxify/eartag.git",
-                    "tag": "0.2.1",
-                    "commit": "af529a703c3b94834dba7fb0444715375b2ef789"
+                    "tag": "0.3.0",
+                    "commit": "a4378cd7f1a0e8f87b9a696f60ea465a9e45988e"
                 }
             ]
         }

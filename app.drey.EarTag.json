@@ -35,13 +35,9 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/knuxify/eartag.git",
-                    "tag": "0.3.0",
-                    "commit": "a4378cd7f1a0e8f87b9a696f60ea465a9e45988e"
-                },
-				{
-					"type": "patch",
-					"path": "hotfix-issue57.patch"
-				}
+                    "tag": "0.3.1",
+                    "commit": "5a7598b92c2615f15e45be9c9c0f6c53fd84ed6d"
+                }
             ]
         }
     ]

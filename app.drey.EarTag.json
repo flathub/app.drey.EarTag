@@ -34,9 +34,9 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "https://github.com/knuxify/eartag.git",
-                    "tag": "0.3.1",
-                    "commit": "5a7598b92c2615f15e45be9c9c0f6c53fd84ed6d"
+                    "url" : "https://gitlab.gnome.org/knuxify/eartag.git",
+                    "tag": "0.3.2",
+                    "commit": "b0fcc50f4fa0eaf33795d0807d58525527cd8c23"
                 }
             ]
         }

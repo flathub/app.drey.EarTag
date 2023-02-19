@@ -33,7 +33,11 @@
                     "url" : "https://gitlab.gnome.org/knuxify/eartag.git",
                     "tag": "0.3.2",
                     "commit": "b0fcc50f4fa0eaf33795d0807d58525527cd8c23"
-                }
+                },
+				{
+					"type" : "patch",
+					"path" : "data-required-screen-size.patch"
+				}
             ]
         }
     ]

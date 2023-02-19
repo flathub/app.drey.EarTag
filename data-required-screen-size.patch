@@ -1,0 +1,28 @@
+From 0811097477a78e98971242aa336df95aa1f0b4b2 Mon Sep 17 00:00:00 2001
+From: knuxify <knuxify@gmail.com>
+Date: Sun, 19 Feb 2023 09:33:48 +0100
+Subject: [PATCH] data: add required screen size
+
+Should hopefully make it show up as mobile-friendly in GNOME Software now.
+---
+ data/app.drey.EarTag.metainfo.xml.in | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/data/app.drey.EarTag.metainfo.xml.in b/data/app.drey.EarTag.metainfo.xml.in
+index cf6d67b..41b3cd2 100644
+--- a/data/app.drey.EarTag.metainfo.xml.in
++++ b/data/app.drey.EarTag.metainfo.xml.in
+@@ -18,6 +18,10 @@
+     <control>touch</control>
+   </supports>
+ 
++  <requires>
++    <display_length compare="ge">300</display_length>
++  </requires>
++
+   <releases>
+     <release version="0.3.2" date="2022-02-16"/>
+     <release version="0.3.1" date="2022-12-30"/>
+-- 
+2.39.2
+

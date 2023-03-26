@@ -1,7 +1,7 @@
 {
     "app-id" : "app.drey.EarTag",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "43",
+    "runtime-version" : "44",
     "sdk" : "org.gnome.Sdk",
     "command" : "eartag",
     "finish-args" : [
@@ -31,13 +31,9 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/knuxify/eartag.git",
-                    "tag": "0.3.2",
-                    "commit": "b0fcc50f4fa0eaf33795d0807d58525527cd8c23"
-                },
-				{
-					"type" : "patch",
-					"path" : "data-required-screen-size.patch"
-				}
+                    "tag": "0.3.3",
+                    "commit": "bf8c0b683566cda9fdc139ac5afe41d7008d6f1c"
+                }
             ]
         }
     ]

@@ -74,12 +74,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/knuxify/eartag.git",
-                    "tag" : "0.4.0",
-                    "commit" : "b31fa5421cc839e519c9d839d39006a51dc8280a"
-                },
-                {
-                    "type": "patch",
-                    "path": "sidebar-hotfix.patch"
+                    "tag" : "0.4.1",
+                    "commit" : "520c7b36703ed65380aadacd6b365fa682d280ed"
                 }
             ]
         }

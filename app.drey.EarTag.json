@@ -74,8 +74,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/World/eartag.git",
-                    "tag" : "0.4.2",
-                    "commit" : "a59a4f3ca78559733b40404cea5e6f64965063bc"
+                    "tag" : "0.4.3",
+                    "commit" : "fedc60c5960d10edcc0145104ba4cea3f06bfab0"
                 }
             ]
         }

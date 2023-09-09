@@ -1,0 +1,29 @@
+From bfb4f18a285f397c24ce8a773a6b015b0513ea32 Mon Sep 17 00:00:00 2001
+From: knuxify <knuxify@gmail.com>
+Date: Wed, 23 Aug 2023 17:57:31 +0200
+Subject: [PATCH] window: remove dialog.unref call
+
+...how did I miss that?
+---
+ src/window.py | 2 --
+ 1 file changed, 2 deletions(-)
+
+diff --git a/src/window.py b/src/window.py
+index 2e950f6..c41018f 100644
+--- a/src/window.py
++++ b/src/window.py
+@@ -277,11 +277,9 @@ class EartagWindow(Adw.ApplicationWindow):
+             elif self.file_chooser_mode == 'files':
+                 response = dialog.open_multiple_finish(result)
+             else:
+-                dialog.unref()
+                 self.file_chooser_mode = None
+                 return False
+         except GLib.GError:
+-            dialog.unref()
+             self.file_chooser_mode = None
+             return False
+ 
+-- 
+2.42.0
+

@@ -76,7 +76,11 @@
                     "url" : "https://gitlab.gnome.org/World/eartag.git",
                     "tag" : "0.4.3",
                     "commit" : "fedc60c5960d10edcc0145104ba4cea3f06bfab0"
-                }
+                },
+				{
+					"type" : "patch",
+					"path" : "window-remove-dialog-unref-call.patch"
+				}
             ]
         }
     ]

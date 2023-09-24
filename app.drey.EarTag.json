@@ -1,7 +1,7 @@
 {
     "app-id" : "app.drey.EarTag",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "44",
+    "runtime-version" : "45",
     "sdk" : "org.gnome.Sdk",
     "command" : "eartag",
     "finish-args" : [
@@ -74,13 +74,9 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/World/eartag.git",
-                    "tag" : "0.4.3",
-                    "commit" : "fedc60c5960d10edcc0145104ba4cea3f06bfab0"
-                },
-				{
-					"type" : "patch",
-					"path" : "window-remove-dialog-unref-call.patch"
-				}
+                    "tag" : "0.5.0",
+                    "commit" : "c6d8bbed65ebacf564eab263725b266128138530"
+                }
             ]
         }
     ]

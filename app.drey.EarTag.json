@@ -9,12 +9,14 @@
         "--share=network",
         "--socket=fallback-x11",
         "--device=dri",
-        "--socket=wayland"
+        "--socket=wayland",
+		"--filesystem=xdg-music",
+		"--filesystem=xdg-download"
     ],
     "add-extensions": {
         "org.freedesktop.Platform.ffmpeg-full": {
             "directory": "lib/ffmpeg",
-            "version": "22.08",
+            "version": "23.08",
             "add-ld-path": ".",
             "autodelete": false
         }
@@ -74,8 +76,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/World/eartag.git",
-                    "tag" : "0.5.1",
-                    "commit" : "d939a201faab668bd65e4dcf49aa203312595329"
+                    "tag" : "0.6.0",
+                    "commit" : "818f479ff77a92d1a37965050b562e4529785837"
                 }
             ]
         }

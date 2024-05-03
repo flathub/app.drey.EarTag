@@ -1,7 +1,7 @@
 {
     "app-id" : "app.drey.EarTag",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "45",
+    "runtime-version" : "46",
     "sdk" : "org.gnome.Sdk",
     "command" : "eartag",
     "finish-args" : [
@@ -10,8 +10,8 @@
         "--socket=fallback-x11",
         "--device=dri",
         "--socket=wayland",
-		"--filesystem=xdg-music",
-		"--filesystem=xdg-download"
+        "--filesystem=xdg-music",
+        "--filesystem=xdg-download"
     ],
     "add-extensions": {
         "org.freedesktop.Platform.ffmpeg-full": {
@@ -69,6 +69,19 @@
             ]
         },
         {
+          "name": "blueprint-compiler",
+          "buildsystem": "meson",
+          "sources": [
+            {
+              "type": "git",
+              "url": "https://gitlab.gnome.org/jwestman/blueprint-compiler",
+              "tag": "v0.12.0",
+              "commit": "66b43c36cf1017c878762007373964a096b3d2a5"
+            }
+          ],
+          "cleanup": ["*"]
+        },
+        {
             "name" : "eartag",
             "builddir" : true,
             "buildsystem" : "meson",
@@ -76,8 +89,12 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/World/eartag.git",
-                    "tag" : "0.6.0",
-                    "commit" : "818f479ff77a92d1a37965050b562e4529785837"
+                    "tag" : "0.6.1",
+                    "commit" : "2d9b03723050e276a4e4f59af67fd3d119c0d8d3"
+                },
+                {
+                    "type": "patch",
+                    "path": "add-developer-info.patch"
                 }
             ]
         }

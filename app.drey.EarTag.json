@@ -1,7 +1,7 @@
 {
     "app-id" : "app.drey.EarTag",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "46",
+    "runtime-version" : "47",
     "sdk" : "org.gnome.Sdk",
     "command" : "eartag",
     "finish-args" : [
@@ -44,23 +44,17 @@
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE:STRING=Release",
                 "-DBUILD_TOOLS:BOOL=ON",
-                "-DFFT_LIB:STRING=avfft"
+                "-DBUILD_TESTS:BOOL=OFF"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/acoustid/chromaprint/releases/download/v1.5.1/chromaprint-1.5.1.tar.gz",
-                    "sha256": "a1aad8fa3b8b18b78d3755b3767faff9abb67242e01b478ec9a64e190f335e1c",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 286,
-                        "stable-only": true,
-                        "url-template": "https://github.com/acoustid/chromaprint/releases/download/v$version/chromaprint-$version.tar.gz"
-                    }
+                    "url": "https://github.com/acoustid/chromaprint/archive/aa67c95b9e486884a6d3ee8b0c91207d8c2b0551.tar.gz",
+                    "sha256": "88e13f065e31d59d102339d956d0e2f99b125386e4d58ae7de6f09b90104b90f"
                 },
                 {
                     "type": "patch",
-                    "path": "chromaprint_ffmpeg5.patch"
+                    "path": "chromaprint_ffmpeg7.patch"
                 }
             ],
             "cleanup": [
@@ -69,17 +63,15 @@
             ]
         },
         {
-          "name": "blueprint-compiler",
-          "buildsystem": "meson",
-          "sources": [
-            {
-              "type": "git",
-              "url": "https://gitlab.gnome.org/jwestman/blueprint-compiler",
-              "tag": "v0.12.0",
-              "commit": "66b43c36cf1017c878762007373964a096b3d2a5"
-            }
-          ],
-          "cleanup": ["*"]
+            "name": "blueprint-compiler",
+            "buildsystem": "meson",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://gitlab.gnome.org/jwestman/blueprint-compiler/-/archive/v0.14.0/blueprint-compiler-v0.14.0.tar.gz",
+                    "sha256": "05faf3810cb76d4e2d2382c6a7e6c8096af27e144e2260635c97f6a173d67234"
+                }
+            ]
         },
         {
             "name" : "eartag",
@@ -89,12 +81,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/World/eartag.git",
-                    "tag" : "0.6.1",
-                    "commit" : "2d9b03723050e276a4e4f59af67fd3d119c0d8d3"
-                },
-                {
-                    "type": "patch",
-                    "path": "add-developer-info.patch"
+                    "tag" : "0.6.2",
+                    "commit" : "9788e29d86ba057f2bd2bd72e33c02adfd4d6ccd"
                 }
             ]
         }

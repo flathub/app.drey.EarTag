@@ -1,7 +1,7 @@
 {
     "app-id" : "app.drey.EarTag",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "47",
+    "runtime-version" : "48",
     "sdk" : "org.gnome.Sdk",
     "command" : "eartag",
     "finish-args" : [
@@ -68,8 +68,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gitlab.gnome.org/jwestman/blueprint-compiler/-/archive/v0.14.0/blueprint-compiler-v0.14.0.tar.gz",
-                    "sha256": "05faf3810cb76d4e2d2382c6a7e6c8096af27e144e2260635c97f6a173d67234"
+                    "url": "https://gitlab.gnome.org/jwestman/blueprint-compiler/-/archive/v0.16.0/blueprint-compiler-v0.16.0.tar.gz",
+                    "sha256": "01feb8263fe7a450b0a9fed0fd54cf88947aaf00f86cc7da345f8b39a0e7bd30"
                 }
             ]
         },
@@ -81,8 +81,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/World/eartag.git",
-                    "tag" : "0.6.4",
-                    "commit" : "9dbd330a64441632da4a874210e9e93c50832708"
+                    "tag" : "0.6.5",
+                    "commit" : "0dcd75379fbcbb89b12341f7c8ffb80de0771328"
                 }
             ]
         }

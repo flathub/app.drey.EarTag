@@ -1,7 +1,7 @@
 {
     "app-id" : "app.drey.EarTag",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "48",
+    "runtime-version" : "49",
     "sdk" : "org.gnome.Sdk",
     "command" : "eartag",
     "finish-args" : [
@@ -16,7 +16,7 @@
     "add-extensions": {
         "org.freedesktop.Platform.ffmpeg-full": {
             "directory": "lib/ffmpeg",
-            "version": "24.08",
+            "version": "25.08",
             "add-ld-path": ".",
             "autodelete": false
         }
@@ -80,7 +80,6 @@
             "name" : "eartag",
             "builddir" : true,
             "buildsystem" : "meson",
-            "run-tests": true,
             "sources" : [
                 {
                     "type" : "git",

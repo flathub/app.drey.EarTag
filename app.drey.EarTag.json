@@ -25,7 +25,9 @@
         "*.a"
     ],
     "modules" : [
-        "python3-modules.json",
+        "python-modules.json",
+        "python-aiohttp.json",
+        "python-pytest.json",
         {
             "name": "python3-mutagen",
             "buildsystem": "simple",

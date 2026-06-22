@@ -1,7 +1,7 @@
 {
     "app-id" : "app.drey.EarTag",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "49",
+    "runtime-version" : "50",
     "sdk" : "org.gnome.Sdk",
     "command" : "eartag",
     "finish-args" : [
@@ -15,23 +15,15 @@
     ],
     "cleanup" : [
         "/include",
+        "/lib/cmake",
         "/lib/pkgconfig",
-        "/man",
-        "/share/doc",
-        "/share/gtk-doc",
-        "/share/man",
-        "/share/pkgconfig",
-        "*.la",
-        "*.a"
+        "/share/man"
     ],
     "modules" : [
-        "python-modules.json",
-        "python-aiohttp.json",
-        "python-pytest.json",
+        "python3-requirements.yaml",
         {
             "name": "chromaprint",
             "buildsystem": "cmake-ninja",
-            "builddir": true,
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE:STRING=Release",
                 "-DBUILD_TOOLS:BOOL=ON",
@@ -43,15 +35,10 @@
                     "url": "https://github.com/acoustid/chromaprint/releases/download/v1.6.0/chromaprint-1.6.0.tar.gz",
                     "sha256": "9d33482e56a1389a37a0d6742c376139fa43e3b8a63d29003222b93db2cb40da"
                 }
-            ],
-            "cleanup": [
-                "/include",
-                "/lib/pkgconfig"
             ]
         },
         {
             "name" : "eartag",
-            "builddir" : true,
             "buildsystem" : "meson",
             "sources" : [
                 {

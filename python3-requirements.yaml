@@ -1,4 +1,4 @@
-# Generated with flatpak-pip-generator org.flatpak.Builder --runtime=org.gnome.Sdk//51 --yaml --requirements-file=requirements.txt --prefer-wheels=aiohttp,aiohttp-retry,aiofiles,mutagen,pillow
+# Generated with flatpak-pip-generator --runtime=org.gnome.Sdk//51 --yaml --requirements-file=requirements.txt --prefer-wheels=aiohttp,aiohttp-retry,aiofiles,mutagen,pillow
 name: python3-requirements
 buildsystem: simple
 build-commands: []
